@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 Web Development</title>
+
+    <!-- css -->
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        color: orange;
+      }
+
+      #title {
+        color: tomato;
+      }
+
+      .title2 {
+        color: salmon;
+      }
+
+      #paragraph {
+        border: 1px solid black;
+        padding: 10px;
+        /* margin: 10px; */
+      }
+    </style>
+
+    <!-- ini untuk link ke css external -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- ini untuk link ke js external -->
+    <!-- <script src="index.js"></script> -->
+
+    <script>
+      // console.log("100");
+
+      //! Variable => sebuah wadah data
+      // deklarasi => camelCase
+      var number;
+      let kataKataHariIni;
+
+      // assignment => mengisi variable dengan data
+      number = 100;
+      kataKataHariIni = "paham?";
+
+      // reassignment
+      number = 1000;
+
+      // deklarasi + assign
+      let student = "maria";
+
+      // string
+      let string1 = "ini string";
+      let string2 = "ini string";
+      let string3 = `ini string`;
+
+      // number
+      let number1 = 10;
+      let number2 = 10;
+
+      // boolean
+      let boolean1 = true;
+      let boolean2 = false;
+
+      let numberString = 5;
+
+      console.log(number1 < numberString);
+    </script>
+  </head>
+  <body>
+    <!-- heading -->
+    <h1 id="judul" style="color: red; font-size: 100px">Ini judul</h1>
+    <h2>Ini judul h2</h2>
+    <h2>ini judul lagi</h2>
+    <button id="button">Ganti judul</button>
+    <marquee behavior="" direction="">test</marquee>
+
+    <script>
+      let judul = document.getElementById("judul");
+      let button = document.getElementById("button");
+
+      button.addEventListener("click", () => {
+        judul.innerHTML = Math.random() * 1000;
+      });
+    </script>
+
+    <h2 id="title">ini h2 baru</h2>
+    <h3 class="title2">Ini judul h3</h3>
+    <h6>ini judul h6</h6>
+
+    <!-- text -->
+    <p>ini paragraph</p>
+    <span id="paragraph">ini parapraph</span><span>ini text 2</span>
+
+    <br />
+    <hr />
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNFBBaKpdo7-wYNrgzpKVr1Jpp52aZs-ejJw&s"
+      alt="Gambar kucing"
+    />
+
+    <ol>
+      <li>masak</li>
+      <li>tidur</li>
+    </ol>
+
+    <ul>
+      <li>belajar</li>
+      <li>pergi ke pasar</li>
+    </ul>
+
+    <!-- anchor -->
+    <a href="https://google.com" target="_blank">Tulisan link</a>
+
+    <button>Ini tombol</button>
+
+    <form action="">
+      <input type="text" placeholder="email" />
+      <input type="password" placeholder="...." />
+      <input type="radio" />
+      <input type="checkbox" />
+      <input type="file" />
+    </form>
+
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+      </tr>
+      <tr>
+        <td>Udin</td>
+        <td>89898989</td>
+      </tr>
+      <tr>
+        <td>Kosasih</td>
+        <td>78787878</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- tag untuk mengelompokkan layout -->
+    <nav>navbar</nav>
+    <section>sction</section>
+    <div>division</div>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>
