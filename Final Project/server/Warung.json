@@ -1,0 +1,52 @@
+[
+  {
+    "foodName": "The Social Network",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8c/The_Social_Network_film_poster.png"
+  },
+  {
+    "foodName": "Finding Nemo",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Finding_Nemo.jpg/220px-Finding_Nemo.jpg"
+  },
+  {
+    "foodName": "The Avengers",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Avengers_%282012_film%29_poster.jpg"
+  },
+  {
+    "foodName": "Pulp Fiction",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
+  },
+  {
+    "foodName": "Jaws",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/JAWS_Movie_poster.jpg/220px-JAWS_Movie_poster.jpg"
+  },
+  {
+    "foodName": "The Godfather",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
+  },
+  {
+    "foodName": "Forrest Gump",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Forrest_Gump_poster.jpg/220px-Forrest_Gump_poster.jpg"
+  },
+  {
+    "foodName": "The Dark Knight",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg"
+  },
+  {
+    "foodName": "The Shawshank Redemption",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
+  },
+  {
+    "foodName": "Inception",
+    "price": 20000,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"
+  }
+]

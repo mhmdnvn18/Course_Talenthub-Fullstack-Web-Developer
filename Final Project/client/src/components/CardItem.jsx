@@ -1,25 +1,25 @@
-function CardItem({ Warung, addToCart }) {
+function CardItem({ movie, addToCart }) {
   return (
     <>
       <div className="col p-3">
         <div className="card">
           <img
-            src={Warung.imageUrl}
+            src={movie.imageUrl}
             className="card-img-top"
             alt="image-poster"
             style={{ height: "300px", objectFit: "cover", padding: "10px" }}
           />
           <div className="card-body">
-            <h5 className="card-foodName">{Warung.foodName}</h5>
+            <h5 className="card-title">{movie.title}</h5>
             <p className="card-text">
-              {Warung.price} -{" "}
-              <span className="badge text-bg-warning">{Warung.genre}</span>
+              {movie.releaseYear} -{" "}
+              <span className="badge text-bg-warning">{movie.genre}</span>
             </p>
             <a
               href="#"
               className="btn btn-primary"
               data-bs-toggle="modal"
-              data-bs-target={"#modal" + Warung.id}
+              data-bs-target={"#modal" + movie.id}
             >
               Lihat Detail
             </a>
@@ -29,7 +29,7 @@ function CardItem({ Warung, addToCart }) {
       {/* <!-- Modal --> */}
       <div
         className="modal fade"
-        id={"modal" + Warung.id}
+        id={"modal" + movie.id}
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -37,8 +37,8 @@ function CardItem({ Warung, addToCart }) {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-foodName fs-5" id="exampleModalLabel">
-                {Warung.foodName}
+              <h1 className="modal-title fs-5" id="exampleModalLabel">
+                {movie.title}
               </h1>
               <button
                 type="button"
@@ -49,11 +49,11 @@ function CardItem({ Warung, addToCart }) {
             </div>
             <div className="modal-body">
               <p>
-                {Warung.price} -{" "}
-                <span className="badge text-bg-warning">{Warung.genre}</span>
+                {movie.releaseYear} -{" "}
+                <span className="badge text-bg-warning">{movie.genre}</span>
               </p>
               <img
-                src={Warung.imageUrl}
+                src={movie.imageUrl}
                 className="card-img-top"
                 alt="image-poster"
               />
@@ -68,7 +68,7 @@ function CardItem({ Warung, addToCart }) {
               </button>
               <button
                 onClick={() => {
-                  addToCart(Warung);
+                  addToCart(movie);
                 }}
                 type="button"
                 className="btn btn-primary"
