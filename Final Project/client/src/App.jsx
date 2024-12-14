@@ -49,6 +49,10 @@ function App() {
     setSelectedItem(Warung);
     setShowModal(true);
   }
+  function handleOrderNow() {
+    alert("Pesanan Anda berhasil dipesan!");
+    setCart([]); // Mengosongkan cart setelah pesanan
+  }
   
 
   // Fungsi untuk menghapus item dari cart
@@ -128,6 +132,16 @@ function App() {
     <CartItem cart={el} key={i} removeFromCart={removeFromCart} />
   ))}
 
+
+  {/* Tombol Pesan Sekarang */}
+  {cart.length > 0 && (
+    <button
+      className="btn btn-success mt-3"
+      onClick={() => handleOrderNow()}
+    >
+      Pesan Sekarang
+    </button>
+  )}
   
 </div>
       </div>
