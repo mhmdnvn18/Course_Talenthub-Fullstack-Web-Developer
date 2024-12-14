@@ -1,8 +1,8 @@
 function CardItem({ Warung, addToCart }) {
   return (
     <>
-      <div className="col p-3">
-        <div className="card">
+      <div className="col p-3  ">
+        <div className="card shadow-sm">
           <img
             src={Warung.imageUrl}
             className="card-img-top"

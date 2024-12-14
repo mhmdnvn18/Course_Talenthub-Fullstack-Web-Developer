@@ -14,7 +14,7 @@ function CartItem({ cart, removeFromCart }) {
       <div>
         <h5 className="card-title">{cart.foodName}</h5>
         <p className="card-text">
-          {new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(cart.price)} x {cart.quantity} {/* Menampilkan jumlah */}
+          {cart.price} x {cart.quantity} {/* Menampilkan jumlah */}
         </p>
         <button
           className="btn btn-danger btn-sm"

@@ -72,18 +72,27 @@ function App() {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar bg-primary bg-gradient sticky-top">
-        <div className="container d-flex">
-          <a className="navbar-brand" href="#" style={{ color: "#FFFFFF" }}>
+      <nav className="navbar bg-primary bg-gradient sticky-top shadow-lg ">
+        <div className="container d-flex align-items-center">
+          {/* Logo di kiri */}
+          <a className="navbar-brand" href="#" >
             <img
-              src="/vite.svg"
+              src="/logopadang.jpg"
               alt="Logo"
-              width="30"
-              height="24"
-              className="d-inline-block align-text-top"
+              width="50"
+              height="50"
+              className="d-inline-block align-text-center"
             />
-            HALAMAN BELANJA
           </a>
+
+          {/* Teks di tengah */}
+          <div className="mx-auto">
+            <span className="navbar-text" style={{ color: "#FFFFFF" }}>
+              WarungOnline.com
+            </span>
+          </div>
+
+          {/* Tombol Cart di kanan */}
           <button
             className="btn btn-warning"
             type="button"
@@ -95,6 +104,14 @@ function App() {
           </button>
         </div>
       </nav>
+
+     {/* Jumbotron Section */}
+      <div className=" bg-primary text-white text-center p-5 mt-0 ">  
+        <h1 className="display-4">Selamat Datang di Warung Online!</h1>
+        <p className="lead">
+        Pesan sekarang dan rasakan pengalaman berbelanja yang lebih mudah!
+        </p>
+        </div>
 
       {/* Tampilan Produk */}
       <div className="container py-5">
@@ -114,8 +131,7 @@ function App() {
         className="offcanvas offcanvas-end"
         tabIndex="-1"
         id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
-      >
+        aria-labelledby="offcanvasExampleLabel">
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasExampleLabel">
             Cart
@@ -128,22 +144,19 @@ function App() {
           ></button>
         </div>
         <div className="offcanvas-body d-flex flex-column gap-2">
-  {cart.map((el, i) => (
-    <CartItem cart={el} key={i} removeFromCart={removeFromCart} />
-  ))}
+          {cart.map((el, i) => (
+          <CartItem cart={el} key={i} removeFromCart={removeFromCart} />
+          ))}
 
-
-  {/* Tombol Pesan Sekarang */}
-  {cart.length > 0 && (
-    <button
-      className="btn btn-success mt-3"
-      onClick={() => handleOrderNow()}
-    >
-      Pesan Sekarang
-    </button>
-  )}
-  
-</div>
+          {/* Tombol Pesan Sekarang */}
+          {cart.length > 0 && (
+            <button
+              className="btn btn-success mt-3"
+              onClick={() => handleOrderNow()}>
+              Pesan Sekarang
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Modal Konfirmasi */}
@@ -153,8 +166,7 @@ function App() {
         style={{
           display: showModal ? "block" : "none",
           backgroundColor: "rgba(0,0,0,0.5)",
-        }}
-      >
+        }}>
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
@@ -183,6 +195,14 @@ function App() {
           </div>
         </div>
       </div>
+
+
+      {/* Footer */}
+      <footer className="bg-primary text-white py-4 mt-5 shadow" >
+        <div className="container text-center">
+          <p>&copy; {new Date().getFullYear()} WARUNG ONLINE. All Rights Reserved.</p>
+        </div>
+      </footer>
     </>
   );
 }
