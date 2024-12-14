@@ -83,17 +83,14 @@ function App() {
               height="50"
               className="d-inline-block align-text-center"
             />
-            <span className="navbar-text ml-4" style={{ color: "#FFFFFF" }}>
-              WarungOnline.com
-            </span>
           </a>
 
           {/* Teks di tengah */}
-          {/* <div className="mx-auto">
+          <div className="mx-auto">
             <span className="navbar-text" style={{ color: "#FFFFFF" }}>
               WarungOnline.com
             </span>
-          </div> */}
+          </div>
 
           {/* Tombol Cart di kanan */}
           <button
@@ -108,23 +105,13 @@ function App() {
         </div>
       </nav>
 
-     {/* Jumbotron Section with Background Image */}
-      <div
-        className="text-white text-center p-5 mt-0"
-        style={{
-          backgroundImage: "url('https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2024/07/16062938/Ragam-Makanan-Khas-Indonesia-yang-Lezat-dan-Kaya-Nutrisi.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <h1 className="display-4 fw-bold">Selamat Datang di Warung Online</h1>
+     {/* Jumbotron Section */}
+      <div className=" bg-primary text-white text-center p-5 mt-0 ">  
+        <h1 className="display-4">Selamat Datang di Warung Online!</h1>
         <p className="lead">
         Pesan sekarang dan rasakan pengalaman berbelanja yang lebih mudah!
         </p>
-      </div>
-
-        
+        </div>
 
       {/* Tampilan Produk */}
       <div className="container py-5">
